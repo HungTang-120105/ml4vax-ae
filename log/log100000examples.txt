@@ -1,0 +1,632 @@
+3.9s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+3.9s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+3.9s 3 0.00s - to python to disable frozen modules.
+3.9s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+4.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+4.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+4.8s 7 0.00s - to python to disable frozen modules.
+4.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+26.8s 9 /tmp/ipykernel_13/3741503675.py:9: DtypeWarning: Columns (14,16,17,18,19,20,22,23,30,34,38) have mixed types. Specify dtype option on import or set low_memory=False.
+26.8s 10 df1 = pd.read_csv('/kaggle/input/vaers1fill/vaers1fill.csv', encoding="ISO-8859-1")
+29.2s 11 Top 20 triệu chứng phổ biến:
+29.2s 12 headache: 88111 reports
+29.2s 13 pyrexia: 71672 reports
+29.2s 14 fatigue: 71633 reports
+29.2s 15 chills: 66819 reports
+29.2s 16 pain: 59917 reports
+29.2s 17 nausea: 48185 reports
+29.2s 18 pain in extremity: 43580 reports
+29.2s 19 dizziness: 43504 reports
+29.2s 20 myalgia: 34935 reports
+29.2s 21 injection site pain: 30304 reports
+29.2s 22 arthralgia: 30126 reports
+29.2s 23 rash: 24207 reports
+29.2s 24 pruritus: 23277 reports
+29.2s 25 injection site erythema: 22260 reports
+29.2s 26 dyspnoea: 20580 reports
+29.2s 27 vomiting: 19694 reports
+29.2s 28 injection site swelling: 17990 reports
+29.2s 29 asthenia: 17006 reports
+29.2s 30 erythema: 16212 reports
+29.2s 31 injection site pruritus: 16096 reports
+29.5s 32 551923
+40.4s 33 Số lượng nhãn 1 (nghiêm trọng): 4552
+40.4s 34 Tỷ lệ nhãn 1 (nghiêm trọng): 4.55%
+334.2s 35 === Random Forest ===
+334.2s 36 precision    recall  f1-score   support
+334.2s 37 
+334.2s 38 0     0.9741    0.9712    0.9727     19090
+334.2s 39 1     0.4317    0.4582    0.4446       910
+334.2s 40 
+334.2s 41 accuracy                         0.9479     20000
+334.2s 42 macro avg     0.7029    0.7147    0.7086     20000
+334.2s 43 weighted avg     0.9494    0.9479    0.9486     20000
+334.2s 44 
+334.2s 45 AUC-ROC Score: 0.8886
+334.2s 46 Top 20 Features (Random Forest): [ 977 1577  786 2510 1845 1345 1872 2822 1885 1878 1113 2783 2512 3454
+334.2s 47 2288 1890 1076 2335 2673 1244]
+334.2s 48 
+334.2s 49 --------------------------------------------------
+334.2s 50 
+389.6s 51 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_logistic.py:458: ConvergenceWarning: lbfgs failed to converge (status=1):
+389.6s 52 STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+389.6s 53 
+389.6s 54 Increase the number of iterations (max_iter) or scale the data as shown in:
+389.6s 55 https://scikit-learn.org/stable/modules/preprocessing.html
+389.6s 56 Please also refer to the documentation for alternative solver options:
+389.6s 57 https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+389.6s 58 n_iter_i = _check_optimize_result(
+389.7s 59 === Logistic Regression ===
+389.7s 60 precision    recall  f1-score   support
+389.7s 61 
+389.7s 62 0     0.9758    0.9912    0.9834     19090
+389.7s 63 1     0.7241    0.4846    0.5806       910
+389.7s 64 
+389.7s 65 accuracy                         0.9681     20000
+389.7s 66 macro avg     0.8500    0.7379    0.7820     20000
+389.7s 67 weighted avg     0.9644    0.9681    0.9651     20000
+389.7s 68 
+389.7s 69 AUC-ROC Score: 0.8704
+389.7s 70 Top 20 Features (Logistic Regression): [ 977 2673 1784 1900 1804 1836 1219 3536 2741 1888 2726 1223 2384 1857
+389.7s 71 1792  786 2918 1220 1890  463]
+389.7s 72 
+389.7s 73 --------------------------------------------------
+389.7s 74 
+417.9s 75 === Support Vector Machine ===
+417.9s 76 precision    recall  f1-score   support
+417.9s 77 
+417.9s 78 0     0.9876    0.8405    0.9082     19090
+417.9s 79 1     0.1889    0.7791    0.3041       910
+417.9s 80 
+417.9s 81 accuracy                         0.8377     20000
+417.9s 82 macro avg     0.5883    0.8098    0.6061     20000
+417.9s 83 weighted avg     0.9513    0.8377    0.8807     20000
+417.9s 84 
+417.9s 85 AUC-ROC Score: 0.8415
+417.9s 86 Top 20 Features (SVM): [1277  967  228  800  342 3676 1592 1589 2799 1529  879 2678 3607 1992
+417.9s 87 3485 3488  925  429 1458 2273]
+417.9s 88 
+417.9s 89 --------------------------------------------------
+417.9s 90 
+682.8s 91 === MLP (2 layers) ===
+682.8s 92 precision    recall  f1-score   support
+682.8s 93 
+682.8s 94 0     0.9776    0.9848    0.9812     19090
+682.8s 95 1     0.6221    0.5264    0.5702       910
+682.8s 96 
+682.8s 97 accuracy                         0.9639     20000
+682.8s 98 macro avg     0.7998    0.7556    0.7757     20000
+682.8s 99 weighted avg     0.9614    0.9639    0.9625     20000
+682.8s 100 
+682.8s 101 AUC-ROC Score: 0.8381
+682.8s 102 Top 20 Features (MLP): [2822 2510 2335 2512 1345  256 1076  786 2288 1577 3639 1872 2133  276
+682.8s 103 2532 1113 2835 2090 3221 2783]
+682.8s 104 
+682.8s 105 --------------------------------------------------
+682.8s 106 
+682.8s 107 Top 20 Features (Total from All Models): [786, 977, 1577, 2510, 1345, 1872, 2822, 1113, 2783, 2512, 2288, 1890, 1076, 2335, 2673, 1845, 1885, 1878, 3454, 1244]
+682.9s 108 Top 20 Features (Random Forest):
+682.9s 109 1. Death
+682.9s 110 2. Headache
+682.9s 111 3. Chills
+682.9s 112 4. Pain
+682.9s 113 5. Injection site erythema
+682.9s 114 6. Fatigue
+682.9s 115 7. Injection site pain
+682.9s 116 8. Pyrexia
+682.9s 117 9. Injection site swelling
+682.9s 118 10. Injection site pruritus
+682.9s 119 11. Dyspnoea
+682.9s 120 12. Pruritus
+682.9s 121 13. Pain in extremity
+682.9s 122 14. Unresponsive to stimuli
+682.9s 123 15. Myalgia
+682.9s 124 16. Injection site warmth
+682.9s 125 17. Dizziness
+682.9s 126 18. Nausea
+682.9s 127 19. Poor quality product administered
+682.9s 128 20. Erythema
+682.9s 129 
+682.9s 130 --------------------------------------------------
+682.9s 131 
+682.9s 132 Top 20 Features (Logistic Regression):
+682.9s 133 1. Death
+682.9s 134 2. Poor quality product administered
+682.9s 135 3. Inappropriate schedule of product administration
+682.9s 136 4. Intensive care
+682.9s 137 5. Induration
+682.9s 138 6. Injection site bruising
+682.9s 139 7. Eosinophil count decreased
+682.9s 140 8. Vaccination site pain
+682.9s 141 9. Product storage error
+682.9s 142 10. Injection site urticaria
+682.9s 143 11. Product administered to patient of inappropriate age
+682.9s 144 12. Eosinophil percentage decreased
+682.9s 145 13. No adverse event
+682.9s 146 14. Injection site inflammation
+682.9s 147 15. Incorrect dose administered
+682.9s 148 16. Chills
+682.9s 149 17. Resuscitation
+682.9s 150 18. Eosinophil count increased
+682.9s 151 19. Injection site warmth
+682.9s 152 20. Blood glucose abnormal
+682.9s 153 
+682.9s 154 --------------------------------------------------
+682.9s 155 
+682.9s 156 Top 20 Features (Support Vector Machine):
+682.9s 157 1. Extensor plantar response
+682.9s 158 2. Cytology normal
+682.9s 159 3. Apgar score normal
+682.9s 160 4. Cholestasis of pregnancy
+682.9s 161 5. Basophil percentage increased
+682.9s 162 6. Withdrawal syndrome
+682.9s 163 7. Helicobacter test positive
+682.9s 164 8. Helicobacter infection
+682.9s 165 9. Pulmonary hilar enlargement
+682.9s 166 10. Haematological malignancy
+682.9s 167 11. Confabulation
+682.9s 168 12. Positron emission tomogram abnormal
+682.9s 169 13. Viral titre increased
+682.9s 170 14. Laryngeal tremor
+682.9s 171 15. Urine osmolarity normal
+682.9s 172 16. Urine sodium normal
+682.9s 173 17. Coxsackie virus test negative
+682.9s 174 18. Blood count abnormal
+682.9s 175 19. Genital burning sensation
+682.9s 176 20. Muscle oedema
+682.9s 177 
+682.9s 178 --------------------------------------------------
+682.9s 179 
+682.9s 180 Top 20 Features (MLP (2 layers)):
+682.9s 181 1. Pyrexia
+682.9s 182 2. Pain
+682.9s 183 3. Nausea
+682.9s 184 4. Pain in extremity
+682.9s 185 5. Fatigue
+682.9s 186 6. Arthralgia
+682.9s 187 7. Dizziness
+682.9s 188 8. Chills
+682.9s 189 9. Myalgia
+682.9s 190 10. Headache
+682.9s 191 11. Vomiting
+682.9s 192 12. Injection site pain
+682.9s 193 13. Malaise
+682.9s 194 14. Asthenia
+682.9s 195 15. Paraesthesia
+682.9s 196 16. Dyspnoea
+682.9s 197 17. Rash
+682.9s 198 18. Lymphadenopathy
+682.9s 199 19. Swelling
+682.9s 200 20. Pruritus
+682.9s 201 
+682.9s 202 --------------------------------------------------
+682.9s 203 
+682.9s 204 Top 20 Most Important Symptoms (Across All Models):
+682.9s 205 1. Chills
+682.9s 206 2. Death
+682.9s 207 3. Headache
+682.9s 208 4. Pain
+682.9s 209 5. Fatigue
+682.9s 210 6. Injection site pain
+682.9s 211 7. Pyrexia
+682.9s 212 8. Dyspnoea
+682.9s 213 9. Pruritus
+682.9s 214 10. Pain in extremity
+682.9s 215 11. Myalgia
+682.9s 216 12. Injection site warmth
+682.9s 217 13. Dizziness
+682.9s 218 14. Nausea
+682.9s 219 15. Poor quality product administered
+682.9s 220 16. Injection site erythema
+682.9s 221 17. Injection site swelling
+682.9s 222 18. Injection site pruritus
+682.9s 223 19. Unresponsive to stimuli
+682.9s 224 20. Erythema
+874.4s 225 === SO SÁNH CÁC MÔ HÌNH VỚI GIẢM CHIỀU DỮ LIỆU ===
+874.4s 226 
+874.4s 227 == Sử dụng PCA (5 thành phần) ==
+901.0s 228 === Random Forest ===
+901.0s 229 precision    recall  f1-score   support
+901.0s 230 
+901.0s 231 0     0.9636    0.9954    0.9793     19090
+901.0s 232 1     0.6893    0.2121    0.3244       910
+901.0s 233 
+901.0s 234 accuracy                         0.9598     20000
+901.0s 235 macro avg     0.8265    0.6038    0.6518     20000
+901.0s 236 weighted avg     0.9512    0.9598    0.9495     20000
+901.0s 237 
+901.0s 238 AUC-ROC Score: 0.8617
+901.0s 239 
+901.0s 240 --------------------------------------------------
+901.0s 241 
+901.4s 242 === Logistic Regression ===
+901.4s 243 precision    recall  f1-score   support
+901.4s 244 
+901.4s 245 0     0.9545    0.9998    0.9766     19090
+901.4s 246 1     0.0000    0.0000    0.0000       910
+901.4s 247 
+901.4s 248 accuracy                         0.9544     20000
+901.4s 249 macro avg     0.4772    0.4999    0.4883     20000
+901.4s 250 weighted avg     0.9111    0.9544    0.9322     20000
+901.4s 251 
+901.4s 252 AUC-ROC Score: 0.7514
+901.4s 253 
+901.4s 254 --------------------------------------------------
+901.4s 255 
+901.7s 256 === Support Vector Machine ===
+901.7s 257 precision    recall  f1-score   support
+901.7s 258 
+901.7s 259 0     0.9579    0.6228    0.7548     19090
+901.7s 260 1     0.0510    0.4253    0.0911       910
+901.7s 261 
+901.7s 262 accuracy                         0.6138     20000
+901.7s 263 macro avg     0.5044    0.5240    0.4229     20000
+901.7s 264 weighted avg     0.9166    0.6138    0.7246     20000
+901.7s 265 
+901.7s 266 AUC-ROC Score: 0.5032
+901.7s 267 
+901.7s 268 --------------------------------------------------
+901.7s 269 
+1012.1s 270 === MLP (2 layers) ===
+1012.1s 271 precision    recall  f1-score   support
+1012.1s 272 
+1012.1s 273 0     0.9605    0.9974    0.9786     19090
+1012.1s 274 1     0.7159    0.1385    0.2320       910
+1012.1s 275 
+1012.1s 276 accuracy                         0.9583     20000
+1012.1s 277 macro avg     0.8382    0.5679    0.6053     20000
+1012.1s 278 weighted avg     0.9493    0.9583    0.9446     20000
+1012.1s 279 
+1012.1s 280 AUC-ROC Score: 0.9024
+1012.1s 281 
+1012.1s 282 --------------------------------------------------
+1012.1s 283 
+1012.1s 284 == Sử dụng LDA (2 thành phần) ==
+1025.3s 285 === Random Forest ===
+1025.3s 286 precision    recall  f1-score   support
+1025.3s 287 
+1025.3s 288 0     0.9769    0.9553    0.9660     19090
+1025.3s 289 1     0.3591    0.5253    0.4266       910
+1025.3s 290 
+1025.3s 291 accuracy                         0.9357     20000
+1025.3s 292 macro avg     0.6680    0.7403    0.6963     20000
+1025.3s 293 weighted avg     0.9488    0.9357    0.9414     20000
+1025.3s 294 
+1025.3s 295 AUC-ROC Score: 0.8008
+1025.3s 296 
+1025.3s 297 --------------------------------------------------
+1025.3s 298 
+1025.3s 299 === Logistic Regression ===
+1025.3s 300 precision    recall  f1-score   support
+1025.3s 301 
+1025.3s 302 0     0.9743    0.9891    0.9816     19090
+1025.3s 303 1     0.6645    0.4527    0.5386       910
+1025.3s 304 
+1025.3s 305 accuracy                         0.9647     20000
+1025.3s 306 macro avg     0.8194    0.7209    0.7601     20000
+1025.3s 307 weighted avg     0.9602    0.9647    0.9615     20000
+1025.3s 308 
+1025.3s 309 AUC-ROC Score: 0.8577
+1025.3s 310 
+1025.3s 311 --------------------------------------------------
+1025.3s 312 
+1025.6s 313 === Support Vector Machine ===
+1025.6s 314 precision    recall  f1-score   support
+1025.6s 315 
+1025.6s 316 0     0.9848    0.9430    0.9634     19090
+1025.6s 317 1     0.3676    0.6956    0.4810       910
+1025.6s 318 
+1025.6s 319 accuracy                         0.9317     20000
+1025.6s 320 macro avg     0.6762    0.8193    0.7222     20000
+1025.6s 321 weighted avg     0.9568    0.9317    0.9415     20000
+1025.6s 322 
+1025.6s 323 AUC-ROC Score: 0.8577
+1025.6s 324 
+1025.6s 325 --------------------------------------------------
+1025.6s 326 
+1033.3s 327 === MLP (2 layers) ===
+1033.3s 328 precision    recall  f1-score   support
+1033.3s 329 
+1033.3s 330 0     0.9746    0.9888    0.9817     19090
+1033.3s 331 1     0.6619    0.4604    0.5431       910
+1033.3s 332 
+1033.3s 333 accuracy                         0.9647     20000
+1033.3s 334 macro avg     0.8183    0.7246    0.7624     20000
+1033.3s 335 weighted avg     0.9604    0.9647    0.9617     20000
+1033.3s 336 
+1033.3s 337 AUC-ROC Score: 0.8577
+1033.3s 338 
+1033.3s 339 --------------------------------------------------
+1033.3s 340 
+1033.8s 341 /usr/local/lib/python3.11/dist-packages/pandas/core/computation/expressions.py:73: RuntimeWarning: invalid value encountered in greater
+1033.8s 342 return op(a, b)
+2921.7s 343 precision    recall  f1-score   support
+2921.7s 344 
+2921.7s 345 0       0.17      0.60      0.27      2921
+2921.7s 346 1       0.03      0.84      0.06       113
+2921.7s 347 2       0.21      0.64      0.32      3574
+2921.7s 348 3       0.15      0.65      0.25      2665
+2921.7s 349 4       0.15      0.65      0.24      2635
+2921.7s 350 5       0.11      0.75      0.19      1696
+2921.7s 351 6       0.17      0.62      0.26      2770
+2921.7s 352 7       0.04      0.59      0.08       659
+2921.7s 353 8       0.07      0.66      0.12      1048
+2921.7s 354 9       0.09      0.59      0.16      1558
+2921.7s 355 10       0.07      0.60      0.13      1172
+2921.7s 356 11       0.08      0.90      0.15       887
+2921.7s 357 12       0.09      0.57      0.16      1637
+2921.7s 358 13       0.11      0.64      0.19      1984
+2921.7s 359 14       0.00      1.00      0.01         3
+2921.7s 360 15       0.15      0.87      0.25      1643
+2921.7s 361 16       0.11      0.84      0.19      1265
+2921.7s 362 17       0.10      0.89      0.19      1131
+2921.7s 363 18       0.01      0.46      0.01        48
+2921.7s 364 19       0.06      0.73      0.11       809
+2921.7s 365 
+2921.7s 366 micro avg       0.11      0.67      0.19     30218
+2921.7s 367 macro avg       0.10      0.70      0.17     30218
+2921.7s 368 weighted avg       0.13      0.67      0.22     30218
+2921.7s 369 samples avg       0.11      0.47      0.17     30218
+2921.7s 370 
+2921.7s 371 /usr/local/lib/python3.11/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels. Use `zero_division` parameter to control this behavior.
+2921.7s 372 _warn_prf(average, modifier, msg_start, len(result))
+2921.7s 373 /usr/local/lib/python3.11/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels. Use `zero_division` parameter to control this behavior.
+2921.7s 374 _warn_prf(average, modifier, msg_start, len(result))
+2921.9s 375 
+2921.9s 376 [ENSEMBLE-CUSTOM] Đánh giá theo từng triệu chứng:
+2921.9s 377 
+2921.9s 378 >>> Chills:
+2921.9s 379 precision    recall  f1-score   support
+2921.9s 380 
+2921.9s 381 0       0.87      0.49      0.63     16351
+2921.9s 382 1       0.17      0.60      0.27      2921
+2921.9s 383 
+2921.9s 384 accuracy                           0.50     19272
+2921.9s 385 macro avg       0.52      0.54      0.45     19272
+2921.9s 386 weighted avg       0.77      0.50      0.57     19272
+2921.9s 387 
+2921.9s 388 
+2921.9s 389 >>> Death:
+2921.9s 390 precision    recall  f1-score   support
+2921.9s 391 
+2921.9s 392 0       1.00      0.84      0.91     19159
+2921.9s 393 1       0.03      0.84      0.06       113
+2921.9s 394 
+2921.9s 395 accuracy                           0.84     19272
+2921.9s 396 macro avg       0.51      0.84      0.49     19272
+2921.9s 397 weighted avg       0.99      0.84      0.91     19272
+2921.9s 398 
+2921.9s 399 
+2921.9s 400 >>> Headache:
+2921.9s 401 precision    recall  f1-score   support
+2921.9s 402 
+2921.9s 403 0       0.85      0.46      0.59     15698
+2921.9s 404 1       0.21      0.64      0.32      3574
+2921.9s 405 
+2921.9s 406 accuracy                           0.49     19272
+2921.9s 407 macro avg       0.53      0.55      0.46     19272
+2921.9s 408 weighted avg       0.73      0.49      0.54     19272
+2921.9s 409 
+2921.9s 410 
+2921.9s 411 >>> Pain:
+2921.9s 412 precision    recall  f1-score   support
+2921.9s 413 
+2921.9s 414 0       0.88      0.43      0.58     16607
+2921.9s 415 1       0.15      0.65      0.25      2665
+2921.9s 416 
+2921.9s 417 accuracy                           0.46     19272
+2921.9s 418 macro avg       0.52      0.54      0.42     19272
+2921.9s 419 weighted avg       0.78      0.46      0.54     19272
+2921.9s 420 
+2921.9s 421 
+2921.9s 422 >>> Fatigue:
+2921.9s 423 precision    recall  f1-score   support
+2921.9s 424 
+2921.9s 425 0       0.88      0.42      0.57     16637
+2921.9s 426 1       0.15      0.65      0.24      2635
+2921.9s 427 
+2921.9s 428 accuracy                           0.45     19272
+2921.9s 429 macro avg       0.52      0.53      0.40     19272
+2921.9s 430 weighted avg       0.78      0.45      0.52     19272
+2921.9s 431 
+2921.9s 432 
+2921.9s 433 >>> Injection site pain:
+2921.9s 434 precision    recall  f1-score   support
+2921.9s 435 
+2921.9s 436 0       0.94      0.40      0.57     17576
+2921.9s 437 1       0.11      0.75      0.19      1696
+2921.9s 438 
+2921.9s 439 accuracy                           0.44     19272
+2921.9s 440 macro avg       0.53      0.58      0.38     19272
+2921.9s 441 weighted avg       0.87      0.44      0.53     19272
+2921.9s 442 
+2921.9s 443 
+2921.9s 444 >>> Pyrexia:
+2922.1s 445 precision    recall  f1-score   support
+2922.1s 446 
+2922.1s 447 0       0.88      0.47      0.62     16502
+2922.1s 448 1       0.17      0.62      0.26      2770
+2922.1s 449 
+2922.1s 450 accuracy                           0.50     19272
+2922.1s 451 macro avg       0.52      0.55      0.44     19272
+2922.1s 452 weighted avg       0.78      0.50      0.57     19272
+2922.1s 453 
+2922.1s 454 
+2922.1s 455 >>> Dyspnoea:
+2922.1s 456 precision    recall  f1-score   support
+2922.1s 457 
+2922.1s 458 0       0.97      0.50      0.66     18613
+2922.1s 459 1       0.04      0.59      0.08       659
+2922.1s 460 
+2922.1s 461 accuracy                           0.51     19272
+2922.1s 462 macro avg       0.51      0.55      0.37     19272
+2922.1s 463 weighted avg       0.94      0.51      0.64     19272
+2922.1s 464 
+2922.1s 465 
+2922.1s 466 >>> Pruritus:
+2922.1s 467 precision    recall  f1-score   support
+2922.1s 468 
+2922.1s 469 0       0.96      0.45      0.62     18224
+2922.1s 470 1       0.07      0.66      0.12      1048
+2922.1s 471 
+2922.1s 472 accuracy                           0.47     19272
+2922.1s 473 macro avg       0.51      0.56      0.37     19272
+2922.1s 474 weighted avg       0.91      0.47      0.59     19272
+2922.1s 475 
+2922.1s 476 
+2922.1s 477 >>> Pain in extremity:
+2922.1s 478 precision    recall  f1-score   support
+2922.1s 479 
+2922.1s 480 0       0.93      0.48      0.63     17714
+2922.1s 481 1       0.09      0.59      0.16      1558
+2922.1s 482 
+2922.1s 483 accuracy                           0.49     19272
+2922.1s 484 macro avg       0.51      0.53      0.39     19272
+2922.1s 485 weighted avg       0.86      0.49      0.59     19272
+2922.1s 486 
+2922.1s 487 
+2922.1s 488 >>> Myalgia:
+2922.1s 489 precision    recall  f1-score   support
+2922.1s 490 
+2922.1s 491 0       0.95      0.52      0.67     18100
+2922.1s 492 1       0.07      0.60      0.13      1172
+2922.1s 493 
+2922.1s 494 accuracy                           0.52     19272
+2922.1s 495 macro avg       0.51      0.56      0.40     19272
+2922.1s 496 weighted avg       0.90      0.52      0.64     19272
+2922.1s 497 
+2922.1s 498 
+2922.1s 499 >>> Injection site warmth:
+2922.1s 500 precision    recall  f1-score   support
+2922.1s 501 
+2922.1s 502 0       0.99      0.51      0.68     18385
+2922.1s 503 1       0.08      0.90      0.15       887
+2922.1s 504 
+2922.1s 505 accuracy                           0.53     19272
+2922.1s 506 macro avg       0.54      0.71      0.41     19272
+2922.1s 507 weighted avg       0.95      0.53      0.65     19272
+2922.1s 508 
+2922.1s 509 
+2922.1s 510 >>> Dizziness:
+2922.2s 511 precision    recall  f1-score   support
+2922.2s 512 
+2922.2s 513 0       0.92      0.48      0.63     17635
+2922.2s 514 1       0.09      0.57      0.16      1637
+2922.2s 515 
+2922.2s 516 accuracy                           0.49     19272
+2922.2s 517 macro avg       0.51      0.52      0.40     19272
+2922.2s 518 weighted avg       0.85      0.49      0.59     19272
+2922.2s 519 
+2922.2s 520 
+2922.2s 521 >>> Nausea:
+2922.4s 522 precision    recall  f1-score   support
+2922.4s 523 
+2922.4s 524 0       0.91      0.40      0.56     17288
+2922.4s 525 1       0.11      0.64      0.19      1984
+2922.4s 526 
+2922.4s 527 accuracy                           0.43     19272
+2922.4s 528 macro avg       0.51      0.52      0.37     19272
+2922.4s 529 weighted avg       0.82      0.43      0.52     19272
+2922.4s 530 
+2922.4s 531 
+2922.4s 532 >>> Poor quality product administered:
+2922.4s 533 precision    recall  f1-score   support
+2922.4s 534 
+2922.4s 535 0       1.00      0.94      0.97     19269
+2922.4s 536 1       0.00      1.00      0.01         3
+2922.4s 537 
+2922.4s 538 accuracy                           0.94     19272
+2922.4s 539 macro avg       0.50      0.97      0.49     19272
+2922.4s 540 weighted avg       1.00      0.94      0.97     19272
+2922.4s 541 
+2922.4s 542 
+2922.4s 543 >>> Injection site erythema:
+2922.4s 544 precision    recall  f1-score   support
+2922.4s 545 
+2922.4s 546 0       0.98      0.52      0.68     17629
+2922.4s 547 1       0.15      0.87      0.25      1643
+2922.4s 548 
+2922.4s 549 accuracy                           0.55     19272
+2922.4s 550 macro avg       0.56      0.70      0.46     19272
+2922.4s 551 weighted avg       0.91      0.55      0.64     19272
+2922.4s 552 
+2922.4s 553 
+2922.4s 554 >>> Injection site swelling:
+2922.4s 555 precision    recall  f1-score   support
+2922.4s 556 
+2922.4s 557 0       0.98      0.51      0.67     18007
+2922.4s 558 1       0.11      0.84      0.19      1265
+2922.4s 559 
+2922.4s 560 accuracy                           0.53     19272
+2922.4s 561 macro avg       0.54      0.68      0.43     19272
+2922.4s 562 weighted avg       0.92      0.53      0.64     19272
+2922.4s 563 
+2922.4s 564 
+2922.4s 565 >>> Injection site pruritus:
+2922.4s 566 precision    recall  f1-score   support
+2922.4s 567 
+2922.4s 568 0       0.99      0.52      0.68     18141
+2922.4s 569 1       0.10      0.89      0.19      1131
+2922.4s 570 
+2922.4s 571 accuracy                           0.54     19272
+2922.4s 572 macro avg       0.55      0.71      0.43     19272
+2922.4s 573 weighted avg       0.94      0.54      0.65     19272
+2922.4s 574 
+2922.4s 575 
+2922.4s 576 >>> Unresponsive to stimuli:
+2922.4s 577 precision    recall  f1-score   support
+2922.4s 578 
+2922.4s 579 0       1.00      0.84      0.91     19224
+2922.4s 580 1       0.01      0.46      0.01        48
+2922.4s 581 
+2922.4s 582 accuracy                           0.84     19272
+2922.4s 583 macro avg       0.50      0.65      0.46     19272
+2922.4s 584 weighted avg       1.00      0.84      0.91     19272
+2922.4s 585 
+2922.4s 586 
+2922.4s 587 >>> Erythema:
+2922.4s 588 precision    recall  f1-score   support
+2922.4s 589 
+2922.4s 590 0       0.98      0.50      0.66     18463
+2922.4s 591 1       0.06      0.73      0.11       809
+2922.4s 592 
+2922.4s 593 accuracy                           0.51     19272
+2922.4s 594 macro avg       0.52      0.61      0.38     19272
+2922.4s 595 weighted avg       0.94      0.51      0.64     19272
+2922.4s 596 
+2922.6s 597 
+2922.6s 598 [ENSEMBLE-CUSTOM] Jaccard Score (samples average): 0.10493362606177142
+2922.6s 599 
+2922.6s 600 [ENSEMBLE-CUSTOM] AUC-ROC cho từng triệu chứng:
+2922.6s 601 /usr/local/lib/python3.11/dist-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Jaccard is ill-defined and being set to 0.0 in samples with no true or predicted labels. Use `zero_division` parameter to control this behavior.
+2922.6s 602 _warn_prf(average, modifier, msg_start, len(result))
+2923.1s 603 Chills: AUC = 0.5575
+2923.3s 604 Death: AUC = 0.7000
+2923.7s 605 Headache: AUC = 0.5485
+2924.2s 606 Pain: AUC = 0.5464
+2924.6s 607 Fatigue: AUC = 0.5260
+2925.0s 608 Injection site pain: AUC = 0.5605
+2925.5s 609 Pyrexia: AUC = 0.5606
+2925.9s 610 Dyspnoea: AUC = 0.4946
+2926.3s 611 Pruritus: AUC = 0.5574
+2926.7s 612 Pain in extremity: AUC = 0.5274
+2927.1s 613 Myalgia: AUC = 0.5698
+2927.5s 614 Injection site warmth: AUC = 0.6963
+2928.0s 615 Dizziness: AUC = 0.5249
+2928.4s 616 Nausea: AUC = 0.5142
+2928.4s 617 Poor quality product administered: AUC = 0.8256
+2928.9s 618 Injection site erythema: AUC = 0.7022
+2929.4s 619 Injection site swelling: AUC = 0.6736
+2929.7s 620 Injection site pruritus: AUC = 0.7084
+2930.0s 621 Unresponsive to stimuli: AUC = 0.5666
+2930.2s 622 Erythema: AUC = 0.6060
+2934.1s 623 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2934.1s 624 warn(
+2934.2s 625 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2934.5s 626 [NbConvertApp] Writing 114579 bytes to __notebook__.ipynb
+2936.2s 627 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2936.2s 628 warn(
+2936.2s 629 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2937.2s 630 [NbConvertApp] Support files will be in __results___files/
+2937.2s 631 [NbConvertApp] Making directory __results___files
+2937.2s 632 [NbConvertApp] Writing 376924 bytes to __results__.html
